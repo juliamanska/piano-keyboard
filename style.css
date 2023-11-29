@@ -31,12 +31,17 @@ body {
 #black-keys-container {
     pointer-events: none;
 }
+#white-keys-container {
+    background: #c0beb8;
+}
 
 .white-piano-key {
     border: solid 1px black;
     background: white;
     height: 480px;
     width: 100%;
+    border-radius: 0 0 8px 8px;
+
 }
 
 .black-piano-key {
@@ -45,6 +50,10 @@ body {
     width: 9.5%;
     border-radius: 0 0 20px 20px;
     pointer-events: auto;
+}
+.black-piano-key:active, .white-piano-key:active {
+    transform-origin: top;
+    transform: scale(0.97);
 }
 
 .black-piano-key:nth-child(1) {
