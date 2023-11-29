@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fffef5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#piano-container {
+    top: 10%;
+    width: 100%;
+    max-width: 720px;
+    position: relative;
+}
+
+#black-keys-container,
+#white-keys-container {
+    margin: 10%5%;
+    width: 90%;
+    height: 480px;
+    border: solid 1px black;
+    display: flex;
+    position: absolute;
+}
+
+#black-keys-container {
+    pointer-events: none;
+}
+
+.white-piano-key {
+    border: solid 1px black;
+    background: white;
+    height: 480px;
+    width: 100%;
+}
+
+.black-piano-key {
+    background: black;
+    height: 295px;
+    width: 9.5%;
+    border-radius: 0 0 20px 20px;
+    pointer-events: auto;
+}
+
+.black-piano-key:nth-child(1) {
+    margin-left: 7.5%;
+}
+
+.black-piano-key:nth-child(2) {
+    margin-left: 3.5%;
+}
+
+.black-piano-key:nth-child(3) {
+    margin-left: 15.5%;
+}
+
+.black-piano-key:nth-child(4) {
+    margin-left: 3%;
+}
+
+.black-piano-key:nth-child(5) {
+    margin-left: 3%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #piano-container {
+        top: 10%;
+        width: 100%;
+        max-width: 720px;
+        position: relative;
+        height: 60vh;
+    }
+    
+    #black-keys-container,
+    #white-keys-container {
+        margin: 20% 5%;
+        width: 90%;
+        height: 50vh;
+        border: solid 1px black;
+        display: flex;
+        position: absolute;
+    }
+    
+    #black-keys-container {
+        pointer-events: none;
+    }
+    
+    .white-piano-key {
+        border: solid 1px black;
+        background: white;
+        height: 50vh;
+        width: 100%;
+    }
+    
+    .black-piano-key {
+        background: black;
+        height: 30vh;
+        width: 9.5%;
+        border-radius: 0 0 20px 20px;
+        pointer-events: auto;
+    }
+    
+    .black-piano-key:nth-child(1) {
+        margin-left: 7.5%;
+    }
+    
+    .black-piano-key:nth-child(2) {
+        margin-left: 3.5%;
+    }
+    
+    .black-piano-key:nth-child(3) {
+        margin-left: 15.5%;
+    }
+    
+    .black-piano-key:nth-child(4) {
+        margin-left: 3%;
+    }
+    
+    .black-piano-key:nth-child(5) {
+        margin-left: 3%;
+    }
+}
